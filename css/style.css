@@ -27,7 +27,7 @@ img {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 5rem;
+    padding: 0 5rem;
     font-family: "Confortaa-Bold";
     position: relative;
 }
@@ -35,10 +35,20 @@ img {
 .contenido-landing {
     display: flex;
     justify-content: space-around;
+    height: 100vh;
+}
+
+.contenedor-formulario {
+    align-items: center;
+    display: flex;
+}
+
+.contenedor-formulario>div {
+    margin-top: -5rem;
 }
 
 .titulo {
-    margin-top: 0;
+    margin-top: 5rem;
     width: 27rem;
 }
 
