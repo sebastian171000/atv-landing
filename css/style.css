@@ -29,7 +29,7 @@ img {
     color: white;
     padding: 5rem;
     font-family: "Confortaa-Bold";
-    /* position: relative; */
+    position: relative;
 }
 
 .contenido-landing {
@@ -104,16 +104,16 @@ form label {
 }
 
 .logos {
-    /* position: absolute;
+    position: absolute;
     bottom: 2rem;
     width: 70rem;
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto; */
-    width: 70rem;
+    margin-right: auto;
+    /* width: 70rem;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 4rem; */
 }
 
 .submit input {
