@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*Now 10px= 1rem*/
+}
+
+@font-face {
+    font-family: "Confortaa-Bold";
+    src: url("../fuente/Comfortaa-Bold.ttf");
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.hero-landing {
+    background-image: url(../img/bg_full.jpg);
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem;
+    font-family: "Confortaa-Bold";
+    /* position: relative; */
+}
+
+.contenido-landing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo {
+    margin-top: 0;
+    width: 27rem;
+}
+
+.titulo img {
+    width: 27rem;
+}
+
+.fecha p {
+    font-size: 3.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.fecha p span {
+    font-size: 5rem;
+}
+
+form {
+    text-align: center;
+}
+
+form label {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input input {
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+}
+
+.radio p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.radio input {
+    opacity: 0;
+}
+
+.radio label {
+    background-color: rgb(127, 0, 178);
+    padding: .3rem 1rem;
+    border-radius: 10px;
+}
+
+.radio label:hover {
+    box-shadow: 0px 0px 10.8px 7.2px rgba(198, 120, 230, 0.22);
+}
+
+.radio>div {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.logos {
+    /* position: absolute;
+    bottom: 2rem;
+    width: 70rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 70rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.submit input {
+    color: white;
+    background-color: #00b0ff;
+    border: navajowhite;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 19px;
+    margin-top: 1.5rem;
+    text-shadow: 0px 9px 6px rgba(0, 137, 202, 0.4);
+}
