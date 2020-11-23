@@ -162,6 +162,10 @@ form label {
     box-shadow: 0px 0px 10.8px 7.2px rgba(198, 120, 230, 0.22);
 }
 
+.radio-click {
+    box-shadow: 0px 0px 10.8px 7.2px rgba(198, 120, 230, 0.22);
+}
+
 .radio>div {
     display: flex;
     margin: 2rem 0;
@@ -204,4 +208,13 @@ form label {
     margin-top: 1.5rem;
     text-shadow: 0px 9px 6px rgba(0, 137, 202, 0.4);
     cursor: pointer;
+}
+
+.gracias-text {
+    text-align: center;
+    font-size: 17px;
+}
+
+.gracias-text h1 {
+    text-shadow: 2px 2px 10px #9C27B0;
 }
