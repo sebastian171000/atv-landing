@@ -32,30 +32,66 @@ img {
     position: relative;
 }
 
-.contenido-landing {
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
+@media (max-width: 900px) {
+    .hero-landing {
+        background-image: url(../img/BackgroundATV\ \(1\).jpg);
+        height: 120vh;
+        overflow: unset;
+        background-size: cover;
+        color: white;
+        padding: 0 2rem;
+        font-family: "Confortaa-Bold";
+        position: relative;
+    }
 }
 
-.contenedor-formulario {
-    align-items: center;
-    display: flex;
+@media (min-width: 900px) {
+    .contenido-landing {
+        display: flex;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .contenedor-formulario {
+        align-items: center;
+        display: flex;
+    }
 }
 
-.contenedor-formulario>div {
-    margin-top: -8rem;
+@media (max-width: 900px) {
+    .contenido-landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .contenedor-formulario {
+        margin-top: 80vw;
+        margin-bottom: 10vw;
+    }
 }
 
-.titulo {
-    width: 27rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 34vw;
+@media (min-width: 900px) {
+    .contenedor-formulario>div {
+        margin-top: -8rem;
+    }
+    .titulo {
+        width: 27rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 34vw;
+        margin-left: 6rem;
+    }
+    .titulo img {
+        width: 27rem;
+    }
 }
 
-.titulo img {
-    width: 27rem;
+@media (max-width: 900px) {
+    .titulo {
+        width: 20rem;
+        margin: 0 auto;
+        display: none;
+    }
 }
 
 .fecha p {
@@ -68,6 +104,15 @@ img {
     font-size: 5rem;
 }
 
+@media (max-width: 900px) {
+    .fecha p span {
+        font-size: 4rem;
+    }
+    .fecha p {
+        font-size: 2.5rem;
+    }
+}
+
 form {
     text-align: center;
 }
@@ -75,7 +120,7 @@ form {
 form label {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .input {
@@ -88,6 +133,11 @@ form label {
     border-radius: 10px;
     height: 35px;
     border: none;
+    font-size: 1.6rem;
+}
+
+.input input:focus {
+    outline: none;
 }
 
 .radio p {
@@ -98,12 +148,14 @@ form label {
 
 .radio input {
     opacity: 0;
+    position: absolute;
 }
 
 .radio label {
     background-color: rgb(127, 0, 178);
     padding: .3rem 1rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .radio label:hover {
@@ -113,19 +165,32 @@ form label {
 .radio>div {
     display: flex;
     margin: 2rem 0;
+    justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+    .radio>div {
+        width: 33rem;
+    }
 }
 
 .logos {
-    position: absolute;
-    bottom: 4rem;
-    width: 70rem;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 70rem;
     margin: 0 auto;
-    margin-top: 4rem; */
+}
+
+@media (min-width: 900px) {
+    .logos {
+        position: absolute;
+        bottom: 4rem;
+        width: 70rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 70rem;
+        margin: 0 auto;
+        margin-top: 4rem; */
+    }
 }
 
 .submit input {
@@ -138,4 +203,5 @@ form label {
     border-radius: 19px;
     margin-top: 1.5rem;
     text-shadow: 0px 9px 6px rgba(0, 137, 202, 0.4);
+    cursor: pointer;
 }
